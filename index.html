@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo da Equipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: green;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 50px;
+        }
+        .profile {
+            text-align: center;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #333;
+        }
+        .profile button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .profile button:hover {
+            background-color: #555;
+        }
+        .content {
+            padding: 50px;
+        }
+        .member-info {
+            display: none;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="Abel.jpg" alt="Membro 1">
+            <h3>Abel Neto</h3>
+            <p>Desenvolvedor Fullstack</p>
+            <button onclick="scrollToProfile('membro1')"><strong>Perfil Profissional</strong></button>
+        </div>
+        <div class="profile">
+            <img src="foto2.jpeg" alt="Membro 2">
+            <h3>Eduardo</h3>
+            <p>Desenvolvedor Front-end</p>
+            <button onclick="scrollToProfile('membro2')"><strong>Perfil Profissional</strong></button>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div id="membro1" class="member-info">
+            <h2>Abel Eliziario de Melo Neto</h2>
+            <p><strong>Apresentação:</strong> Eu sou Abel, tenho 20 anos e sou desenvolvedor full stack laravel.</p>
+            <p><strong>Motivação:</strong></p>
+            <p><strong>Semelhança:</strong></p>
+            <p><strong>Redes sociais:</strong></p>
+        </div>
+        
+        <div id="membro2" class="member-info">
+            <h2>Eduardo</h2>
+            <p><strong>Apresentação:</strong></p>
+            <p><strong>Motivação:</strong></p>
+            <p><strong>Semelhança:</strong></p>
+            <p><strong>Redes sociais:</strong></p>
+        </div>
+    </div>
+    
+    <script>
+        function scrollToProfile(memberId) {
+            document.querySelectorAll('.member-info').forEach(div => div.style.display = 'none');
+            document.getElementById(memberId).style.display = 'block';
+            document.getElementById(memberId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
