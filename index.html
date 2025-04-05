@@ -1,93 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo da Equipe</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: green;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            gap: 50px;
-        }
-        .profile {
-            text-align: center;
-        }
-        .profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #333;
-        }
-        .profile button {
-            margin-top: 10px;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        .profile button:hover {
-            background-color: #555;
-        }
-        .content {
-            padding: 50px;
-        }
-        .member-info {
-            display: none;
-            padding: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./icon.css">
+  <title>Portfólio</title>
 </head>
+
 <body>
+  <header>
     <div class="container">
-        <div class="profile">
-            <img src="Abel.jpg" alt="Membro 1">
-            <h3>Abel Neto</h3>
-            <p>Desenvolvedor Fullstack</p>
-            <button onclick="scrollToProfile('membro1')"><strong>Perfil Profissional</strong></button>
+      <div class="profile">
+        <img src="./imagens/eduardo.png" alt="Eduardo Costa">
+        <div class="info">
+          <h1>Eduardo Costa</h1>
+          <h3>Desenvolvedor Front-End</h3>
+          <button onclick="showProfile('membro1')"><strong>Perfil Profissional</strong></button>
         </div>
-        <div class="profile">
-            <img src="foto2.jpeg" alt="Membro 2">
-            <h3>Eduardo</h3>
-            <p>Desenvolvedor Front-end</p>
-            <button onclick="scrollToProfile('membro2')"><strong>Perfil Profissional</strong></button>
+      </div>
+
+      <div class="profile">
+        <img src="./imagens/Abel.jpg" alt="Abel Neto">
+        <div class="info">
+          <h1>Abel Neto</h1>
+          <h3>Desenvolvedor Fullstack</h3>
+          <button onclick="showProfile('membro2')"><strong>Perfil Profissional</strong></button>
         </div>
+      </div>
     </div>
-    
-    <div class="content">
-        <div id="membro1" class="member-info">
-            <h2>Abel Eliziario de Melo Neto</h2>
-            <p><strong>Apresentação:</strong> Eu sou Abel, tenho 20 anos e sou desenvolvedor full stack laravel.</p>
-            <p><strong>Motivação:</strong></p>
-            <p><strong>Semelhança:</strong></p>
-            <p><strong>Redes sociais:</strong></p>
+  </header>
+
+  <main class="content">
+    <section id="membro1" class="member-info">
+      <img src="./imagens/eduardo.png" alt="Eduardo Costa">
+      <h2>Eduardo Costa</h2>
+      <h4>Desenvolvedor Front-End</h4><br>
+      <div class="text-content">
+        <h3>Apresentação</h3>
+        <p>Olá! Me chamo Eduardo Costa, sou estudante de tecnologia e desenvolvedor Front-End. Tenho paixão por aprender e transformar ideias em projetos que impactam positivamente a vida das pessoas.</p>
+
+        <h3>Motivação</h3>
+        <p>Minha maior motivação vem da minha família, das pessoas que acreditam no meu potencial e me incentivam a seguir em frente.
+          Além disso, sou movido pelo desafio constante de crescer profissionalmente, aprender novas tecnologias e contribuir com projetos que possam fazer a diferença.</p>
+
+        <h3>Semelhança</h3>
+        <p>A nossa maior semelhança está na vontade constante de aprender sobre tecnologia, no amor e respeito que temos pela nossa família, e no espírito guerreiro de nunca desistir dos nossos sonhos.</p>
+
+        <h3>Redes Sociais</h3>
+        <div class="social-links">
+          <a href="https://github.com/Edu8901" target="_blank">
+            <img src="./imagens/github-icon.png" alt="GitHub">
+          </a>
+          <a href="https://wa.me/+559885341069" target="_blank">
+            <img src="./imagens/whatsapp-icon.webp" alt="WhatsApp">
+          </a>
+          <a href="https://www.instagram.com/Edu8901" target="_blank">
+            <img src="./imagens/instagram-icon.png" alt="Instagram">
+          </a>
+      </div>
+      </div>
+    </section>
+
+    <section id="membro2" class="member-info">
+      <img src="./Abel.jpg" alt="Abel Neto">
+      <h2>Abel Neto</h2>
+      <h4>Desenvolvedor Fullstack</h4><br>
+      <div class="text-content">
+        <h3>Apresentação</h3>
+        <p>Olá! Sou estudante de Sistemas de Informação e desenvolvedor web fullstack, apaixonado por tecnologia e por criar soluções que realmente fazem a diferença.</p>
+
+        <h3>Motivação</h3>
+        <p>Minha maior motivação é a minha família, minha namorada e futura esposa, que sempre acreditam em mim e me incentivam a ser a melhor versão de mim mesmo</p>
+
+        <h3>Semelhança</h3>
+        <p>A nossa maior semelhança está na vontade constante de aprender sobre tecnologia, no amor e respeito que temos pela nossa família, e no espírito guerreiro de nunca desistir dos nossos sonhos.</p>
+
+        <h3>Redes Sociais</h3>
+        <div class="social-links">
+            <a href="https://github.com/abelneto7" target="_blank">
+              <img src="./imagens/github-icon.png" alt="GitHub">
+            </a>
+            <a href="https://wa.me/+557999401982" target="_blank">
+              <img src="./imagens/whatsapp-icon.webp" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/abelneto07" target="_blank">
+              <img src="./imagens/instagram-icon.png" alt="Instagram">
+            </a>
         </div>
-        
-        <div id="membro2" class="member-info">
-            <h2>Eduardo</h2>
-            <p><strong>Apresentação:</strong></p>
-            <p><strong>Motivação:</strong></p>
-            <p><strong>Semelhança:</strong></p>
-            <p><strong>Redes sociais:</strong></p>
-        </div>
-    </div>
-    
-    <script>
-        function scrollToProfile(memberId) {
-            document.querySelectorAll('.member-info').forEach(div => div.style.display = 'none');
-            document.getElementById(memberId).style.display = 'block';
-            document.getElementById(memberId).scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
 </body>
 </html>
