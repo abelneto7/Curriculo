@@ -28,3 +28,5 @@ Este projeto tem como objetivo apresentar nossos perfis profissionais de forma c
 ## Como visualizar
 
 Basta abrir o arquivo `index.html` em seu navegador para visualizar a página.
+Ou entrar no link do projeto hospedado:
+https://curriculo-jet-beta.vercel.app/
